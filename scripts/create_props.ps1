@@ -29,7 +29,7 @@ foreach($zip in $zips) {
   $base_name = [System.IO.Path]::GetFileNameWithoutExtension($zip)
   # echo $base_name
   7z x upload\$zip -oupload\($base_name) -aoa
-  .\tools\PropsCreate_exe.exe "upload\$base_name" "$macro" '"XI_USE_DLL_TARGET;%(PreprocessorDefinitions)"' "upload\$base_name.props"
+  .\tools\PropsCreate_exe.exe "upload\$base_name" "$macro" '"XI_USE_DLL_REVERSEMODELING;%(PreprocessorDefinitions)"' "upload\$base_name.props"
   7z a upload\$zip ".\upload\$base_name.props" -aoa
 }
 
