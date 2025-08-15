@@ -22,7 +22,7 @@
 #include <memory>
 
 // local
-#include "xi_export_TARGET.h"
+#include "xi_export_REVERSEMODELING.h"
 
 class ReverseModeling;
 
@@ -30,9 +30,9 @@ XI_BEGIN_NAMESPACE
 
 class IReverseModeling {
 public:
-    XI_EXPORT_TARGET
+    XI_EXPORT_REVERSEMODELING
 	IReverseModeling();
-    XI_EXPORT_TARGET
+    XI_EXPORT_REVERSEMODELING
 	~IReverseModeling();
 
 private:
@@ -40,8 +40,8 @@ private:
 };
 
 extern "C" {
-	XI_EXPORT_TARGET IReverseModeling* CreateIReverseModelingObj();
-	XI_EXPORT_TARGET void ReleaseIReverseModelingObj(IReverseModeling* obj);
+	XI_EXPORT_REVERSEMODELING IReverseModeling* CreateIReverseModelingObj();
+	XI_EXPORT_REVERSEMODELING void ReleaseIReverseModelingObj(IReverseModeling* obj);
 }
 
 XI_END_NAMESPACE
