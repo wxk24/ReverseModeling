@@ -1,5 +1,0 @@
-
-PROJECT_NAME=template-CompositeProject
-template-CompositeProject_VERSION_MAJOR=1
-template-CompositeProject_VERSION_MINOR=0
-template-CompositeProject_VERSION_PATCH=8
