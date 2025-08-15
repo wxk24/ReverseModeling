@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 对外的所有接口:
 		1. 都需加上宏 XI_EXPORT_REVERSEMODELING
 		2. 都需包含在命名空间namespace xi 下
