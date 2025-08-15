@@ -1,51 +1,36 @@
-# template-CompositeProject
+# ReverseModeling
 
-> README.md: 当前项目或目录的说明文档, 必要目录下都应有此文档
+[![ReverseModeling](https://img.shields.io/badge/ReverseModeling-latest-blue)](https://github.com/XiGeoAlgorithm/ReverseModeling/releases)
+[![New Version](https://img.shields.io/badge/New_Version-lawngreen)](https://xialgorithm.yuque.com/org-wiki-xialgorithm-dlvfmf/version_update)
+[![Upload & Download](https://img.shields.io/badge/Upload_&_Download-lightblue)](https://xialgorithm.yuque.com/tmarbw/3rdparty)
 
-用于有其他三方库依赖的复合项目
+ReverseModeling 项目简介
 
-## Contents
+## 环境配置
 
-1. [Steps](#steps)
-2. [Notes](#notes)
-3. [Release](#release)
+### 运行环境
 
-### Steps
+1. $\ge$ Windows 10
+2. [VS](https://xialgorithm.yuque.com/g/tmarbw/software/folder/30227859) `v141`
+3. [Windows SDK](https://xialgorithm.yuque.com/g/tmarbw/software/folder/36406235) `10.0.17763.0`
+4. $\ge$ `c++11`
+5. [GoogleTest](https://xialgorithm.yuque.com/g/tmarbw/packages/folder/32294647)
 
-[:top:](#contents)
+### 三方库
 
-1. 点击 `Use this template`  => `Create a new repository`
+1. 下载所需三方库到 `3rdParty/` 目录下
+   1. [pcl-1.8.1](https://xialgorithm.yuque.com/g/tmarbw/3rdparty/folder/31057537)
+   2. [opencv-4.5.4](https://xialgorithm.yuque.com/g/tmarbw/3rdparty/folder/32299739)
+   > 这只是一个例子, 请删除并替换为自己项目依赖的三方库, 并删除本行
+2. 双击运行 `3rdParty/extract.bat`
+3. 双击运行 `scripts/extract_3rdParty_dlls.bat `
 
-2. 在`Repository name`处填入新建的仓库名称
+### 测试数据
 
-   > 仓库名称由 英文大小写字母 和 下划线 组成, 不要有特殊字符, 如空格, `-` ;
+> 若新增测试数据, 请先在语雀资源库 [GitHubRepoData](https://xialgorithm.yuque.com/tmarbw/githubrepodata) 下新建项目的同名文件夹 `ReverseModeling` 和 `ReverseModeling/files` ,  然后替换掉下面**测试数据**指向的链接, 并删除本行
 
-   填写 `Description` (可选), 点击 `Create repository from template`
+1. 下载所需[测试数据](https://xialgorithm.yuque.com/g/tmarbw/githubrepodata/folder/36529182)到 `files/` 目录下
+2. 双击运行 `files/extract.bat`
 
-   等待新仓库中的工作流执行完成即可.
-
-### Notes
-
-[:top:](#contents)
-
-1. 开发时按要求将各文件放在对应目录, 如源码放在 `src` 文件夹中, 测试源码放在 `tests` 文件夹中, 对外接口文件放在 `include` 文件夹中.
-
-   详情请查看 [三方库格式编绎规范](https://xialgorithm.yuque.com/tmarbw/share/dh9agapom70k3dgl)
-
-2. 文件夹 `scripts/` , `.github/workflows/` 下<u>已有的文件无需修改</u>
-
-   可添加自己需要的文件
-
-3. 提交代码必须按照 [commit 规范](https://xialgorithm.yuque.com/tmarbw/share/uufsmw82ykisqups)
-
-### Release
-
-[:top:](#contents)
-
-点击 `scripts/Git_Tag.bat` , 输入 new tag
-
-格式必须为 `v[0-9]+.[0-9]+.[0-9]+`
-
-如 `v1.0.0`    `v2.3.4`    `v12.345.6789`
-
-> 每次输入的版本必须大于之前的版本
+> * 点击 `files/extract.bat`  可一键解压 所有的压缩包, 用于已上传的文件
+> * 点击 `files/package.bat`  可一键压缩 所有的文件夹, 用于要上传的文件
