@@ -1,0 +1,47 @@
+name: 🐛 Bug Report
+description: Open an issue about a bug that needs fixing.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+- type: input
+  attributes:
+    label: 当前提交
+    description: 产生此 Bug(s) 时对应的提交记录的 HASH 值
+    placeholder: e.g. a14ad043ee608a0c19fadb3b0d5e5b8784873574 或 a14ad04
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: 问题描述*
+    description: 清晰而简洁地描述你期望发生的事情和实际发生的事情
+    placeholder: X 存在 xxx 问题, 期望结果是 Y, 而实际是 Z.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 如何复现
+    description: 重现该错误的步骤、示例代码或失败的测试
+    placeholder: |
+      运行测试 TestExample.Case1
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: 问题原因 & 如何解决
+    description: 产生这个问题的原因 以及 修复这个问题的建议或解决方案
+    placeholder: 错误原因可能是 xxx, 或许 xxx 可以解决
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: 附件等
+    description: 附上对解决问题有帮助或相关的内容或文件
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: 关联任务
+    description: 关联的语雀空间中的任务的链接
+    placeholder: https://xialgorithm.yuque.com/r/tmarbw/issues/xxx
+  validations:
+    required: false

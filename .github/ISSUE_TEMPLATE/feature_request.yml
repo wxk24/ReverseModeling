@@ -1,0 +1,37 @@
+name: 🚀 Feature Request
+description: Please provide a detailed description of the feature you are requesting.
+title: "[Feat]: "
+labels: ["enhancement"]
+body:
+- type: textarea
+  attributes:
+    label: 描述您的功能请求*
+    description: 请提供您请求的功能的详细描述.
+    placeholder: 功能是 XXX
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 可能的解决方案
+    description: 描述您对这个功能的任何可能解决方案或想法.
+    placeholder: |
+      功能可以这样实现:
+      1. 先 XXX
+      2. 再 XXX
+      ...
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: 其他相关信息
+    description: 在这里添加关于该功能的任何其他上下文.
+    placeholder: 这里有一些已实现的类似的功能...
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: 关联任务
+    description: 关联的语雀空间中的任务的链接
+    placeholder: https://xialgorithm.yuque.com/r/tmarbw/issues/xxx
+  validations:
+    required: false

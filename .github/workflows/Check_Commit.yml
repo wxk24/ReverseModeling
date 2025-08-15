@@ -1,0 +1,21 @@
+name: Check_Commit
+
+permissions:
+  contents: write
+  actions: write
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
+  workflow_dispatch:
+
+jobs:
+  check_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check-commit
+        uses: gendloop/check-commit@main
