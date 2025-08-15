@@ -15,7 +15,7 @@
 
 	xi::ReleaseIReverseModelingObj(p);
  * @endcode
- * @author	AUTHOR
+ * @author	wxk24
  */
 
 // c++
